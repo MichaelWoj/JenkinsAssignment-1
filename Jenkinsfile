@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                javac Student.java java Student
+                bat 'student.bat'
             }
         }
         stage('Test') { 
             steps {
-               javac studentTest.java 
-               java studentTest.java
+                bat 'test.bat'
             }
         }
     }
