@@ -1,1 +1,1 @@
-javac Student.java java Student
+javac Student.java
